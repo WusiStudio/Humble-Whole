@@ -1,0 +1,15 @@
+[submodule "IMemory"]
+	path = IMemory
+	url = git@github.com:WusiStudio/IMemory.git
+[submodule "Tools"]
+	path = Tools
+	url = git@github.com:WusiStudio/Tools.git
+[submodule "Humble"]
+	path = Humble
+	url = git@github.com:WusiStudio/Humble.git
+[submodule "glfw"]
+	path = glfw
+	url = git@github.com:glfw/glfw.git
+[submodule "glm"]
+	path = glm
+	url = git@github.com:g-truc/glm.git
