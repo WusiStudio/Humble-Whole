@@ -7,6 +7,8 @@ option(BUILD_IMEMORY_TESTS "build IMemory tests" OFF)
 option(BUILD_TOOLS_TESTS "build Tools tests" OFF)
 option(BUILD_HUMBLE_TESTS "build Humble tests" ON)
 
+add_subdirectory(Humble)
+
 
 if(BUILD_GLFW)
     add_subdirectory(glfw)
@@ -21,5 +23,5 @@ if(BUILD_TOOLS_TESTS)
 endif()
 
 if(BUILD_HUMBLE_TESTS)
-    add_subdirectory(Humble)
+    add_subdirectory(Humble/tests)
 endif()
