@@ -7,12 +7,16 @@ option(BUILD_IMEMORY_TESTS "build IMemory tests" OFF)
 option(BUILD_TOOLS_TESTS "build Tools tests" OFF)
 option(BUILD_HUMBLE_TESTS "build Humble tests" ON)
 
-add_subdirectory(Humble)
+
+set(GLFW_INCLUDE_DIR ${PROJECT_SOURCE_DIR}/glfw/include)
+set(IMEMORY_INCLUDE_DIR ${PROJECT_SOURCE_DIR}/IMemory/include)
 
 
 if(BUILD_GLFW)
     add_subdirectory(glfw)
 endif()
+
+add_subdirectory(Humble)
 
 if(BUILD_IMEMORY_TESTS)
     add_subdirectory(IMemory)
