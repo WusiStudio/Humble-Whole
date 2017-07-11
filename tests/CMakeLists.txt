@@ -25,7 +25,7 @@ aux_source_directory(src SRCS)
 
 add_executable(${PROJECT_NAME} ${SRCS})
 
-target_link_libraries(${PROJECT_NAME} Humble VGraphical glfw)
+target_link_libraries(${PROJECT_NAME} Humble VGraphical glfw ${VULKAN_LIBRARY})
 
 
 #输出路径

@@ -16,14 +16,6 @@ set(TOOLS_INCLUDE_DIR ${PROJECT_SOURCE_DIR}/Tools/include)
 set(IMEMORY_INCLUDE_DIR ${PROJECT_SOURCE_DIR}/IMemory/include)
 set(VGRAPHICAL_INCLUDE_DIR ${PROJECT_SOURCE_DIR}/VGraphical/include)
 
-if(ENABLE_VULKAN)
-    find_path(_VULKAN_INCLUDE_DIR NAMES vulkan/vulkan.h HINTS
-        "$ENV{VULKAN_SDK}/Include"
-        "$ENV{VK_SDK_PATH}/Include")
-    set(VULKAN_INCLUDE_DIR ${_VULKAN_INCLUDE_DIR})
-endif()
-
-
 if(BUILD_GLFW)
     add_subdirectory(glfw)
 endif()
