@@ -11,6 +11,7 @@ option(BUILD_HUMBLE_TESTS "build Humble tests" ON)
 
 
 set(HUMBLE_INCLUDE_DIR ${PROJECT_SOURCE_DIR}/Humble/include)
+set(GLM_INCLUDE_DIR ${PROJECT_SOURCE_DIR}/glm/glm)
 set(GLFW_INCLUDE_DIR ${PROJECT_SOURCE_DIR}/glfw/include)
 set(TOOLS_INCLUDE_DIR ${PROJECT_SOURCE_DIR}/Tools/include)
 set(IMEMORY_INCLUDE_DIR ${PROJECT_SOURCE_DIR}/IMemory/include)
@@ -19,7 +20,6 @@ set(VGRAPHICAL_INCLUDE_DIR ${PROJECT_SOURCE_DIR}/VGraphical/include)
 if(BUILD_GLFW)
     add_subdirectory(glfw)
 endif()
-
 
 add_subdirectory(VGraphical)
 add_subdirectory(Humble)

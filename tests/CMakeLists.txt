@@ -9,8 +9,16 @@ if(HUMBLE_INCLUDE_DIR)
     include_directories(${HUMBLE_INCLUDE_DIR})
 endif()
 
+if(VULKAN_INCLUDE_DIR)
+	include_directories(${VULKAN_INCLUDE_DIR})
+endif()
+
 if(GLFW_INCLUDE_DIR)
     include_directories(${GLFW_INCLUDE_DIR})
+endif()
+
+if(TOOLS_INCLUDE_DIR)
+    include_directories(${TOOLS_INCLUDE_DIR})
 endif()
 
 if(IMEMORY_INCLUDE_DIR)
