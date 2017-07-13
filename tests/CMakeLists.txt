@@ -13,6 +13,10 @@ if(VULKAN_INCLUDE_DIR)
 	include_directories(${VULKAN_INCLUDE_DIR})
 endif()
 
+if(GLM_INCLUDE_DIR)
+    include_directories(${GLM_INCLUDE_DIR})
+endif()
+
 if(GLFW_INCLUDE_DIR)
     include_directories(${GLFW_INCLUDE_DIR})
 endif()
