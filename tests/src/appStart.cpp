@@ -7,5 +7,7 @@ int main(int argc, char ** argv)
     
     ws::testApp & app = ws::testApp::Create();
 
+    std::getchar();
+
     return 0;
 }
